@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<!-- Custom header code that pulls from WP -->
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img-fluid" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="100%" alt="">
+        </div>        
+    </div>
     <div class="content-area">
         <main>
             <section class="slide">

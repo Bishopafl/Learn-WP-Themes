@@ -16,12 +16,12 @@ function learnwp_config() {
         )
     );
 
-    //
-    $args = array(
+    // custom header theme support
+    DKKROP6DPOOOPOOPOO$args = array(
         'height'    => 225,
         'width'     => 1920
     );
     add_theme_support( 'custom-header', $args);
 }
-
+// last param handles priority of the function
 add_action( 'after_setup_theme', 'learnwp_config', 0);

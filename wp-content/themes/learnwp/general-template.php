@@ -7,9 +7,13 @@ Template Name: General Template
 
 <?php get_header(); ?>
 
-<img class="img-fluid" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
-
-    <div class="content-area">
+        <!-- Custom header section -->
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="100%" alt="">
+            </div>        
+        </div>
+        <!-- /Custom header section -->
         <main>
             
             <seciton class="middle-area">
