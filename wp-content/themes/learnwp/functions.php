@@ -7,9 +7,21 @@ function load_scripts() {
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
 
-register_nav_menus(
-    array(
-        'my_mayne_menu' => 'Mayne Menu',
-        'footer_menu' => 'Footer Menu'
-    )
-);
+function learnwp_config() {
+    // Registering out menus
+    register_nav_menus(
+        array(
+            'my_mayne_menu' => 'Mayne Menu',
+            'footer_menu' => 'Footer Menu'
+        )
+    );
+
+    //
+    $args = array(
+        'height'    => 225,
+        'width'     => 1920
+    );
+    add_theme_support( 'custom-header', $args);
+}
+
+add_action( 'after_setup_theme', 'learnwp_config', 0);
