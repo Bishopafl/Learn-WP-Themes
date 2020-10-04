@@ -25,6 +25,8 @@ function learnwp_config() {
 
     // add thumbnail support
     add_theme_support( 'post-thumbnails' );
+    // add formatting menu to theme
+    add_theme_support( 'post-formats', array('video', 'image') );
 }
 // last param handles priority of the function
 add_action( 'after_setup_theme', 'learnwp_config', 0);
