@@ -73,7 +73,7 @@ h3{ font-size: 20px; margin-top: 0px; }
     background: #b0121b;
     color: #fff;
     padding: 15px 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 /* ************************ */
 
@@ -81,12 +81,13 @@ h3{ font-size: 20px; margin-top: 0px; }
 /*       Middle Area        */
 /*     ---------------      */
 .middle-area {
-    padding: 25px 0;
+    padding: 25px 25px;
 }
 .middle-area h1 {
     color: #4c1b1b;
     text-transform: uppercase;
 }
+
 /* ************************ */
 
 /* ************************ */
