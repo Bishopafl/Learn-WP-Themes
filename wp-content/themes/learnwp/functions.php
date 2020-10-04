@@ -28,3 +28,32 @@ function learnwp_config() {
 }
 // last param handles priority of the function
 add_action( 'after_setup_theme', 'learnwp_config', 0);
+
+// Registering our sidebars
+function learnwp_sidebars() {
+    // homepage sidebar
+    register_sidebar(
+        array(
+            'name'          => 'Home Page Sidebar',
+            'id'            => 'sidebar-1',
+            'description'   => 'This is the Home Page Sidebar. You can add your widgets here',
+            'before_widget' => '<div class="widget-wrapper">', // The HTML element that will serve as a wrapper element for the widget
+            'after_widget'  => '</div>', // Closing of the html element above
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        )
+    );
+    // blog sidebar
+    register_sidebar(
+        array(
+            'name'          => 'Blog Sidebar',
+            'id'            => 'sidebar-2',
+            'description'   => 'This is the Blog Page Sidebar. You can add your widgets here',
+            'before_widget' => '<div class="widget-wrapper">', // The HTML element that will serve as a wrapper element for the widget
+            'after_widget'  => '</div>', // Closing of the html element above
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        )
+    );
+}
+add_action('widgets_init', 'learnwp_sidebars');
