@@ -55,5 +55,41 @@ function learnwp_sidebars() {
             'after_title'   => '</h2>'
         )
     );
+    // Service 1
+    register_sidebar(
+        array(
+            'name'          => 'Service 1',
+            'id'            => 'services-1',
+            'description'   => 'First Services Area',
+            'before_widget' => '<div class="widget-wrapper">', // The HTML element that will serve as a wrapper element for the widget
+            'after_widget'  => '</div>', // Closing of the html element above
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        )
+    );
+    // Service 2
+    register_sidebar(
+        array(
+            'name'          => 'Serivce 2',
+            'id'            => 'services-2',
+            'description'   => 'Second Services Area',
+            'before_widget' => '<div class="widget-wrapper">', // The HTML element that will serve as a wrapper element for the widget
+            'after_widget'  => '</div>', // Closing of the html element above
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        )
+    );
+    // Service 3
+    register_sidebar(
+        array(
+            'name'          => 'Service 3',
+            'id'            => 'services-3',
+            'description'   => 'Third Services Area',
+            'before_widget' => '<div class="widget-wrapper">', // The HTML element that will serve as a wrapper element for the widget
+            'after_widget'  => '</div>', // Closing of the html element above
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>'
+        )
+    );
 }
 add_action('widgets_init', 'learnwp_sidebars');
