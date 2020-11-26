@@ -8,9 +8,9 @@
             </section>
             <section class="services">
                 <div class="container">
-                    <h1>Our Services</h1>
+                    <h1 class="home-title">Offered Services</h1>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 service-card">
                             <div class="services-item">
                                 <?php 
                                     if (is_active_sidebar('services-1')) {
@@ -19,7 +19,7 @@
                                 ?>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 service-card">
                             <div class="services-item">
                                 <?php 
                                     if (is_active_sidebar('services-2')) {
@@ -28,7 +28,7 @@
                                 ?>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 service-card">
                             <div class="services-item">
                                 <?php 
                                     if (is_active_sidebar('services-3')) {
